@@ -122,6 +122,7 @@ body.theme-gruvbox-dark,
 	--brand-text: var(--accent-text);
 
 	--link: #83a598;
+	--link-default: var(--link);
 	--link-hover: #8ec07c;
 	--link-broken: #fb4934;
 

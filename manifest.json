@@ -1,0 +1,13 @@
+{
+	"id": "gruvbox",
+	"name": "gruvbox",
+	"displayName": "Gruvbox",
+	"description": "A warm Gruvbox theme for Cortex with dark and light variants.",
+	"author": "Cortex Theme Lab",
+	"version": "1.0.0",
+	"minAppVersion": "0.1.0",
+	"colorschemes": {
+		"dark": "dark.css",
+		"light": "light.css"
+	}
+}

@@ -1,3 +1,4 @@
+:root,
 body.theme-gruvbox-light,
 .theme-gruvbox-light {
 	color-scheme: light;
@@ -107,6 +108,7 @@ body.theme-gruvbox-light,
 	--text-on-accent: #fbf1c7;
 
 	--accent: #af3a03;
+	--accent-default: var(--accent);
 	--accent-hover: #d65d0e;
 	--accent-active: #9d0006;
 	--accent-subtle: rgba(175, 58, 3, 0.11);
@@ -124,6 +126,7 @@ body.theme-gruvbox-light,
 	--link-broken: #9d0006;
 
 	--border: #d5c4a1;
+	--border-default: var(--border);
 	--border-subtle: #ebdbb2;
 	--border-strong: #bdae93;
 	--border-focus: #af3a03;

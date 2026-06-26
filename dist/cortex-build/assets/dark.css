@@ -1,3 +1,4 @@
+:root,
 body.theme-gruvbox-dark,
 .theme-gruvbox-dark {
 	color-scheme: dark;
@@ -107,6 +108,7 @@ body.theme-gruvbox-dark,
 	--text-on-accent: #1d2021;
 
 	--accent: #fabd2f;
+	--accent-default: var(--accent);
 	--accent-hover: #fe8019;
 	--accent-active: #d79921;
 	--accent-subtle: rgba(250, 189, 47, 0.14);
@@ -124,6 +126,7 @@ body.theme-gruvbox-dark,
 	--link-broken: #fb4934;
 
 	--border: #504945;
+	--border-default: var(--border);
 	--border-subtle: #3c3836;
 	--border-strong: #665c54;
 	--border-focus: #fabd2f;

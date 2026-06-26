@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"kind": "theme",
+	"id": "gruvbox",
+	"name": "gruvbox",
+	"version": "1.0.0",
+	"tagName": "v1.0.0",
+	"releaseName": "gruvbox v1.0.0",
+	"releaseNotes": "release-notes.md",
+	"repository": "cortex-md/gruvbox",
+	"assets": [
+		{
+			"name": "manifest.json",
+			"path": "assets/manifest.json"
+		},
+		{
+			"name": "dark.css",
+			"path": "assets/dark.css"
+		},
+		{
+			"name": "light.css",
+			"path": "assets/light.css"
+		},
+		{
+			"name": "gruvbox-1.0.0.zip",
+			"path": "assets/gruvbox-1.0.0.zip"
+		}
+	],
+	"registry": {
+		"owner": "cortex-md",
+		"repo": "registry",
+		"baseBranch": "main",
+		"indexFile": "themes.json",
+		"entry": {
+			"id": "gruvbox",
+			"name": "gruvbox",
+			"author": "Cortex Theme Lab",
+			"description": "A warm Gruvbox theme for Cortex with dark and light variants.",
+			"coverImageUrl": "",
+			"repo": "cortex-md/gruvbox"
+		}
+	}
+}

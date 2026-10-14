@@ -1,0 +1,21 @@
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Install Cortex CLI
+        run: bun add -g "@cortex.md/cli@^0.3.0"
+
+      - name: Check theme
+        run: cortex check --strict

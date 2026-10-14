@@ -96,19 +96,23 @@ body.theme-gruvbox-light,
 	--bg-selected: rgba(175, 58, 3, 0.12);
 	--bg-code: #f2e5bc;
 	--bg-tag: #ebdbb2;
+	--surface-raised: #f9f5d7;
+	--surface-raised-hover: #f2e5bc;
+	--fill-quiet: rgba(60, 56, 54, 0.05);
+	--fill-quiet-strong: rgba(60, 56, 54, 0.085);
+	--fill-selected: rgba(60, 56, 54, 0.065);
 	--editor-selection-bg: rgba(175, 58, 3, 0.18);
 	--editor-search-match-bg: rgba(7, 102, 120, 0.17);
 	--editor-search-match-active-bg: rgba(175, 58, 3, 0.26);
 
 	--text-primary: #3c3836;
 	--text-secondary: #504945;
-	--text-muted: #7c6f64;
+	--text-muted: #665c54;
 	--text-disabled: #a89984;
 	--text-placeholder: #928374;
 	--text-on-accent: #fbf1c7;
 
 	--accent: #af3a03;
-	--accent-default: var(--accent);
 	--accent-hover: #d65d0e;
 	--accent-active: #9d0006;
 	--accent-subtle: rgba(175, 58, 3, 0.11);
@@ -122,15 +126,14 @@ body.theme-gruvbox-light,
 	--brand-text: var(--accent-text);
 
 	--link: #076678;
-	--link-default: var(--link);
 	--link-hover: #427b58;
 	--link-broken: #9d0006;
 
 	--border: #d5c4a1;
-	--border-default: var(--border);
 	--border-subtle: #ebdbb2;
 	--border-strong: #bdae93;
 	--border-focus: #af3a03;
+	--hairline: rgba(60, 56, 54, 0.1);
 
 	--syntax-keyword: #9d0006;
 	--syntax-string: #79740e;
@@ -146,14 +149,14 @@ body.theme-gruvbox-light,
 	--font-ui: "SF Pro Text", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	--font-editor: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 	--font-mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-	--ui-font-size: 13px;
-	--editor-font-size: 15px;
+	--ui-font-size: 14px;
+	--editor-font-size: 16px;
 	--ui-font-weight: 500;
-	--ui-line-height: 18px;
+	--ui-line-height: 17px;
 	--editor-font-weight: 400;
-	--editor-line-height: 25px;
+	--editor-line-height: 27px;
 	--normal-weight: 400;
-	--editor-paragraph-spacing: 0.85em;
+	--editor-paragraph-spacing: 1em;
 
 	--status-error: #9d0006;
 	--error-bg: rgba(157, 0, 6, 0.1);
@@ -229,6 +232,9 @@ body.theme-gruvbox-light,
 	--shadow-raised: 0 1px 0 rgba(175, 58, 3, 0.08);
 	--shadow-floating: 0 16px 38px rgba(60, 56, 54, 0.17);
 	--shadow-overlay: 0 26px 70px rgba(60, 56, 54, 0.24);
+	--shadow-floating-pill: 0 0 0 1px rgba(60, 56, 54, 0.05), 0 2px 4px rgba(60, 56, 54, 0.05), 0 10px 24px -8px rgba(60, 56, 54, 0.18);
+	--shadow-primary: 0 1px 2px rgba(175, 58, 3, 0.18);
+	--workspace-card-shadow: 0 0 0 1px rgba(60, 56, 54, 0.05), 0 1px 2px rgba(60, 56, 54, 0.04), 0 10px 28px -14px rgba(60, 56, 54, 0.12);
 
 	--background: var(--bg-primary);
 	--foreground: var(--text-primary);
@@ -264,53 +270,38 @@ body.theme-gruvbox-light,
 	--tag-active-bg: rgba(175, 58, 3, 0.18);
 	--tag-text: #af3a03;
 	--tag-active-text: #3c3836;
-	--tag-font-size: 12px;
-	--tag-font-weight: 650;
-	--tag-border-radius: 5px;
-	--tag-padding: 2px 7px;
+	--tag-font-size: 0.75rem;
+	--tag-font-weight: 500;
+	--tag-border-radius: 10px;
+	--tag-padding: 2px 8px;
 
-	--heading-font-weight: 700;
-	--inline-title-margin-bottom: 1.1rem;
-	--h1-font-size: 1.2em;
-	--h2-font-size: 1.08em;
+	--heading-font-weight: 600;
+	--inline-title-margin-bottom: 1rem;
+	--h1-font-size: 1.125em;
+	--h2-font-size: 1.05em;
 	--h3-font-size: 1em;
-	--h4-font-size: 0.96em;
-	--h5-font-size: 0.92em;
-	--h6-font-size: 0.88em;
+	--h4-font-size: 0.9em;
+	--h5-font-size: 0.85em;
+	--h6-font-size: 0.85em;
 	--h1-color: #af3a03;
-	--h2-color: #b57614;
-	--h3-color: #79740e;
-	--h4-color: #076678;
-	--h5-color: #8f3f71;
-	--h6-color: #7c6f64;
+	--h2-color: #9d0006;
+	--h3-color: #076678;
+	--h4-color: #8f3f71;
+	--h5-color: #504945;
+	--h6-color: #665c54;
 
-	--radius: 8px;
-	--radius-sm: 4px;
-	--radius-md: 6px;
-	--radius-lg: 8px;
-	--control-font-size: 13px;
-	--control-line-height: 16px;
-	--control-radius: 5px;
-	--control-pill-radius: 7px;
-	--control-height-sm: 24px;
-	--control-height-md: 28px;
-	--control-height-lg: 40px;
-	--button-height-md: 28px;
-	--input-height-md: 32px;
-	--popup-radius: 8px;
-	--popup-item-radius: 5px;
-	--dialog-radius: 10px;
-	--markdown-content-width: 760px;
-	--markdown-content-gutter: 44px;
-	--markdown-block-radius: 7px;
-	--markdown-block-spacing: 0.95em;
+	--radius: 0.625rem;
+	--markdown-content-width: 720px;
+	--markdown-content-gutter: 40px;
+	--markdown-block-radius: 6px;
+	--markdown-block-spacing: 1em;
 	--markdown-code-font-family: var(--font-mono);
-	--markdown-code-font-size: 0.92em;
-	--markdown-code-padding-inline: 14px;
-	--markdown-code-padding-block: 9px;
+	--markdown-code-font-size: 14px;
+	--markdown-code-padding-inline: 16px;
+	--markdown-code-padding-block: 8px;
 	--markdown-callout-padding-block: 12px;
-	--markdown-callout-padding-inline-start: 20px;
-	--markdown-callout-padding-inline-end: 14px;
+	--markdown-callout-padding-inline-start: 24px;
+	--markdown-callout-padding-inline-end: 12px;
 }
 
 body.theme-gruvbox-light [data-popup-surface],
